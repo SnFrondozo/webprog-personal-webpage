@@ -6,100 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile Webpage</title>
     <style>
+       
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0 15px;
+            background-color: #121212;
+            color: #ffffff;
         }
-        
+
+        h1, h2, h3, h4 {
+            color: #4caf50;
+        }
+
+        a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         hr {
+            border: 0;
+            height: 1px;
+            background: #4caf50;
             margin: 20px 0;
         }
+
         img {
             max-width: 100%;
             height: auto;
         }
+
         .profile-img {
             width: 250px;
             height: 250px;
             object-fit: cover;
             border-radius: 10px;
+            border: 2px solid #4caf50;
         }
+
         .gallery-img {
             width: 300px;
             height: 300px;
             object-fit: cover;
             border-radius: 10px;
+            margin: 10px;
+            border: 2px solid #4caf50;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
         }
+
         table img {
             width: 150px;
             height: 150px;
             object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #4caf50;
         }
+
         ul {
             list-style-type: disc;
             padding-left: 20px;
         }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
-    <h1>Personal Profile Webpage</h1>
-    <hr>
+    <div class="content">
+        <h1>Personal Profile Webpage</h1>
+        <hr>
 
-    <h2>About Me</h2>
-    <img src="https://scontent.fmnl9-4.fna.fbcdn.net/v/t1.15752-9/462558619_1680302822530872_3638218794792069436_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDWiR6FcjVEFhrgnljQKD_jmhKKhbt3E6OaEoqFu3cTuonSQgX-iVXTQvy8WbDSpoIOxHz1D0hRQa1GH3UI1Ym&_nc_ohc=4h1boOMVBOYQ7kNvgE-GQYR&_nc_zt=23&_nc_ht=scontent.fmnl9-4.fna&oh=03_Q7cD1QEobAQW2cKCiuuCQwb4jmfBGX5EqmLqn16GHxvJxJCIIQ&oe=676F2BC7" alt="Profile Picture" class="profile-img">
-    <p><strong>Name:</strong> Sondrick Frondozo</p>
-    <p><strong>Nickname:</strong> Drick / Sun</p>
+        <h2>About Me</h2>
+        <img src="https://scontent.fmnl9-4.fna.fbcdn.net/v/t1.15752-9/462558619_1680302822530872_3638218794792069436_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDWiR6FcjVEFhrgnljQKD_jmhKKhbt3E6OaEoqFu3cTuonSQgX-iVXTQvy8WbDSpoIOxHz1D0hRQa1GH3UI1Ym&_nc_ohc=4h1boOMVBOYQ7kNvgE-GQYR&_nc_zt=23&_nc_ht=scontent.fmnl9-4.fna&oh=03_Q7cD1QEobAQW2cKCiuuCQwb4jmfBGX5EqmLqn16GHxvJxJCIIQ&oe=676F2BC7" alt="Profile Picture" class="profile-img">
+        <p><strong>Name:</strong> Sondrick Frondozo</p>
+        <p><strong>Nickname:</strong> Drick / Sun</p>
 
-    <h3>Education & Achievements</h3>
-    <p><strong>Achievements:</strong> None</p>
-    <p><strong>Humanities and Social Sciences</strong></p>
-    <h3>Current</h3>
-    <p><strong>Education:</strong> Asia Pacific College</p>
-    <ul>
-        <li>BSIT-MI</li>
-    </ul>
+        <h3>Education & Achievements</h3>
+        <p><strong>Achievements:</strong> None</p>
+        <p><strong>Humanities and Social Sciences</strong></p>
+        <h3>Current</h3>
+        <p><strong>Education:</strong> Asia Pacific College</p>
+        <ul>
+            <li>BSIT-MI</li>
+        </ul>
 
-    <h3>Course</h3>
-    <p>Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>
+        <h3>Course</h3>
+        <p>Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>
 
-    <h3>IT Experience</h3>
-    <ul>
-        <li>SQL</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>CSS</li>
-    </ul>
+        <h3>IT Experience</h3>
+        <ul>
+            <li>SQL</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>CSS</li>
+        </ul>
 
-    <h3>Hobbies & Interests</h3>
-    <ul>
-        <li>Music</li>
-        <li>Reading manhwa/novels/manga</li>
-        <li>Playing Games</li>
-    </ul>
+        <h3>Hobbies & Interests</h3>
+        <ul>
+            <li>Music</li>
+            <li>Reading manhwa/novels/manga</li>
+            <li>Playing Games</li>
+        </ul>
 
-    <h4>Games</h4>
-    <table>
-        <tr>
-            <td><img src="https://imgs.search.brave.com/mfcaMvLXxiulq_eL-3MGIsfflK9qLuLvgM3KIVtrcBk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YXByb3h5LnR2dHJv/cGVzLm9yZy93aWR0/aC8xMjAwL2h0dHBz/Oi8vc3RhdGljLnR2/dHJvcGVzLm9yZy9w/bXdpa2kvcHViL2lt/YWdlcy9sZWFndWVv/ZmxlZ2VuZHMucG5n" alt="Game 1"></td>
-            <td><img src="https://imgs.search.brave.com/zkvQsv9bDCrmIsVZUaXDmtgI7u6pRxzGTZKtPKrQPcc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlptUXdNalEy/WlRVdFptTTVNQzAw/TVRka0xXSXhZemd0/T0RVMU56UTRaamc0/Tm1NeFhrRXlYa0Zx/Y0djQC5qcGc" alt="Game 2"></td>
-            <td><img src="https://imgs.search.brave.com/dqrxJfIqLykq-Td8xqYYRu8FCrBPkPyMKAp45nKP5DY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmdhbWVyYW50/aW1hZ2VzLmNvbS93/b3JkcHJlc3Mvd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDQv/d3V0aGVyaW5nLXdh/dmVzLWdhbWUuanBn" alt="Game 3"></td>
-            <td><img src="https://imgs.search.brave.com/G4sQeXtQ0TtSJQuqvF9v_VIfYhNbzKVL6daifk5WYGQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpqUTRZVFpp/Tm1RdFpEWmpOUzAw/TURKakxXSmxaVGN0/T1RCbE56UXlOamt6/WlRWalhrRXlYa0Zx/Y0djQC5qcGc" alt="Game 4"></td>
-        </tr>
-    </table>
+        <h4>Games</h4>
+        <table>
+            <tr>
+                <td><img src="https://imgs.search.brave.com/mfcaMvLXxiulq_eL-3MGIsfflK9qLuLvgM3KIVtrcBk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YXByb3h5LnR2dHJv/cGVzLm9yZy93aWR0/aC8xMjAwL2h0dHBz/Oi8vc3RhdGljLnR2/dHJvcGVzLm9yZy9w/bXdpa2kvcHViL2lt/YWdlcy9sZWFndWVv/ZmxlZ2VuZHMucG5n" alt="Game 1"></td>
+                <td><img src="https://imgs.search.brave.com/zkvQsv9bDCrmIsVZUaXDmtgI7u6pRxzGTZKtPKrQPcc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlptUXdNalEy/WlRVdFptTTVNQzAw/TVRka0xXSXhZemd0/T0RVMU56UTRaamc0/Tm1NeFhrRXlYa0Zx/Y0djQC5qcGc" alt="Game 2"></td>
+                <td><img src="https://imgs.search.brave.com/dqrxJfIqLykq-Td8xqYYRu8FCrBPkPyMKAp45nKP5DY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmdhbWVyYW50/aW1hZ2VzLmNvbS93/b3JkcHJlc3Mvd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDQv/d3V0aGVyaW5nLXdh/dmVzLWdhbWUuanBn" alt="Game 3"></td>
+                <td><img src="https://imgs.search.brave.com/G4sQeXtQ0TtSJQuqvF9v_VIfYhNbzKVL6daifk5WYGQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpqUTRZVFpp/Tm1RdFpEWmpOUzAw/TURKakxXSmxaVGN0/T1RCbE56UXlOamt6/WlRWalhrRXlYa0Zx/Y0djQC5qcGc" alt="Game 4"></td>
+            </tr>
+        </table>
 
-    <h2>Goals In Life / Dream</h2>
-    <p>To become a leading innovator in the tech industry, creating solutions that enhance convenience and accessibility for everyone. I aim to inspire others to embrace the potential of technology while staying committed to lifelong learning, personal growth, and fostering meaningful connections with my family and community.</p>
+        <h2>Goals In Life / Dream</h2>
+        <p>To become a leading innovator in the tech industry, creating solutions that enhance convenience and accessibility for everyone. I aim to inspire others to embrace the potential of technology while staying committed to lifelong learning, personal growth, and fostering meaningful connections with my family and community.</p>
 
-    <h2>Picture Gallery</h2>
-    <p>
-        <img src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.15752-9/462580040_1215532019554159_4994362751218240618_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGb_oQXreZSq09_bS58wckajxDJI1HECXyPEMkjUcQJfNEKZJIBF0BrLTCdaMv3Fnf-1Q81-Pb6enJ7QVu1dond&_nc_ohc=FZUOMMYZRHoQ7kNvgEPwuk1&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&oh=03_Q7cD1QGIugQUhvY34vTqTEQozApFsGr-JrwwinxjjpHkVRC0ow&oe=676F4104" alt="Image 1" class="gallery-img">
-        <img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/467477889_3184751838332903_4035622673160545191_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE1uIlhutlGUOaCdKSoJfSlEa3aTd3BDVERrdpN3cENUd5susCSF9UdwXnN-dazrBjYenb2EiRrQZWgTLdI7MhS&_nc_ohc=B1cP18tWsukQ7kNvgGqmTcT&_nc_zt=23&_nc_ht=scontent.fmnl9-1.fna&oh=03_Q7cD1QFJVRQq2-C6PAubMyOWoLENnvLP22s_16DsnaXjB-HxxQ&oe=676F2BEF" alt="Image 2" class="gallery-img">
-    </p>
+        <h2>Picture Gallery</h2>
+        <p>
+            <img src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.15752-9/462580040_1215532019554159_4994362751218240618_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGb_oQXreZSq09_bS58wckajxDJI1HECXyPEMkjUcQJfNEKZJIBF0BrLTCdaMv3Fnf-1Q81-Pb6enJ7QVu1dond&_nc_ohc=FZUOMMYZRHoQ7kNvgEPwuk1&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&oh=03_Q7cD1QGIugQUhvY34vTqTEQozApFsGr-JrwwinxjjpHkVRC0ow&oe=676F4104" alt="Image 1" class="gallery-img">
+            <img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/467477889_3184751838332903_4035622673160545191_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE1uIlhutlGUOaCdKSoJfSlEa3aTd3BDVERrdpN3cENUd5susCSF9UdwXnN-dazrBjYenb2EiRrQZWgTLdI7MhS&_nc_ohc=B1cP18tWsukQ7kNvgGqmTcT&_nc_zt=23&_nc_ht=scontent.fmnl9-1.fna&oh=03_Q7cD1QFJVRQq2-C6PAubMyOWoLENnvLP22s_16DsnaXjB-HxxQ&oe=676F2BEF" alt="Image 2" class="gallery-img">
+        </p>
+    </div>
 </body>
 </html>
