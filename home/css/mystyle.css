@@ -1,82 +1,90 @@
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0 15px;
-  background-color: #121212;
-  color: #ffffff;
-}
-
-h1, h2, h3, h4 {
-  color: #4caf50;
-}
-
-a {
-  color: #4caf50;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background: #4caf50;
-  margin: 20px 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.profile-img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 2px solid #4caf50;
-}
-
-.gallery-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 10px;
-  border: 2px solid #4caf50;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 2px solid #4caf50;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-p {
-  margin-bottom: 10px;
+  background-color: lightblue;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 20px;
+  color: navy;
+  margin-left: 20px;
+}
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0 15px;
+background-color: #121212;
+color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+color: #4caf50;
+}
+
+a {
+color: #4caf50;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+hr {
+border: 0;
+height: 1px;
+background: #4caf50;
+margin: 20px 0;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+.profile-img {
+width: 250px;
+height: 250px;
+object-fit: cover;
+border-radius: 10px;
+border: 2px solid #4caf50;
+}
+
+.gallery-img {
+width: 300px;
+height: 300px;
+object-fit: cover;
+border-radius: 10px;
+margin: 10px;
+border: 2px solid #4caf50;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+table img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 10px;
+border: 2px solid #4caf50;
+}
+
+ul {
+list-style-type: disc;
+padding-left: 20px;
+}
+
+p {
+margin-bottom: 10px;
+}
+
+h1 {
+text-align: center;
+margin-bottom: 20px;
 }
 
 .content {
-  max-width: 900px;
-  margin: 0 auto;
+max-width: 900px;
+margin: 0 auto;
 }
