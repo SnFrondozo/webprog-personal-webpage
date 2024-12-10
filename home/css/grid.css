@@ -9,61 +9,98 @@ body {
     background-color: #121212;
     color: #ffffff;
     padding: 20px;
+    line-height: 1.6;
 }
 
 .grid-container {
     display: grid;
     grid-template-areas:
-        'header header header header header header'
-        'menu main main main right right'
-        'menu footer footer footer footer footer';
-    gap: 10px;
+        "header header header header header header"
+        "menu main main main right right"
+        "menu footer footer footer footer footer";
+    gap: 15px;
     padding: 20px;
 }
 
-/* Grid Areas */
+
 .header { grid-area: header; }
 .menu { grid-area: menu; }
 .main { grid-area: main; }
 .right { grid-area: right; }
 .footer { grid-area: footer; }
 
-/* Section Styles */
+
 .grid-container > div {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(20, 20, 20, 0.9);
     text-align: center;
     padding: 20px;
-    font-size: 18px;
     border-radius: 8px;
 }
 
-/* Profile Picture */
-.profile-pic {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 10px;
-}
 
-/* Menu Styling */
-.menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu li {
+.header h1 {
+    font-size: 24px;
     margin: 10px 0;
-}
-
-.menu a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.menu a:hover {
     color: #00bcd4;
 }
 
 
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu nav ul li {
+    margin: 10px 0;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+.main h2 {
+    margin-bottom: 15px;
+    color: #00bcd4;
+}
+
+.main p, .main ul {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.main ul {
+    padding-left: 20px;
+}
+
+.main ul li {
+    margin-bottom: 5px;
+}
+
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00bcd4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.footer {
+    font-size: 14px;
+    color: #aaaaaa;
+}
