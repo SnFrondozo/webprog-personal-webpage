@@ -1,9 +1,11 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-        'header header header header header header'
-        'menu main main main right right'
-        'menu footer footer footer footer footer';
+        'header header'
+        'menu main'
+        'menu right'
+        'footer footer';
+    grid-template-columns: 25% 75%;
     gap: 10px;
     background-color: #121212;
     color: #ffffff;
@@ -40,10 +42,6 @@
     text-decoration: none;
 }
 
-.item2 ul li a:hover {
-    text-decoration: underline;
-}
-
 .item3 {
     grid-area: main;
     background-color: #1f1f1f;
@@ -56,6 +54,9 @@
     height: 150px;
     border-radius: 50%;
     margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .item4 {
@@ -63,22 +64,23 @@
     background-color: #1f1f1f;
     border-radius: 8px;
     padding: 20px;
-    text-align: center;
 }
 
 .item4 .game {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .item4 .game img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .item4 .game p {
-    margin: 10px 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .item5 {
@@ -97,28 +99,4 @@
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-.social-icons img:hover {
-    transform: scale(1.2);
-}
-
-.back-to-top {
-    display: inline-block;
-    margin-top: 15px;
-    font-size: 16px;
-    color: #00bcd4;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.back-to-top:hover {
-    color: #ffffff;
 }

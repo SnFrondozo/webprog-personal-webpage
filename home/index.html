@@ -3,91 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/grid.css?version=0.4">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Personal Profile</title>
+    <title>Personal Profile Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/465054479_3886877201580186_4401328358624045156_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFOh_fx_nNNplECwjYCctFUisRSBQ32vVaKxFIFDfa9Vn0bw5WMxRHN3HfqNv0JbnWq-DHUTDtg_y9fESgUos6s&_nc_ohc=yXQWZuYsB2AQ7kNvgEZz30D&_nc_zt=23&_nc_ht=scontent.fmnl9-1.fna&oh=03_Q7cD1QF11jmkmaMMbdD9ZSMTUCufINqsYb9z0Rhwo-A5MqFBjw&oe=677F786B" type="image/x-icon">
 </head>
 <body>
+    <div class="grid-container">
+       
+        <div class="item1">
+            <h1>Personal Profile Web Page</h1>
+        </div>
 
-<div class="grid-container">
-    <!-- Header -->
-    <div class="header">
-        <h1>Personal Profile Web Page</h1>
-    </div>
-
-    <!-- Menu -->
-    <div class="menu">
-        <nav>
+        
+        <div class="item2">
+            <h3>Menu</h3>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main">
-        <h2>About Me</h2>
-        <p><strong>Name:</strong> Sondrick Frondozo</p>
-        <p><strong>Nickname:</strong> Drick / Sun</p>
-        <p><strong>Education / Achievements:</strong> None/NA</p>
-        <p><strong>Course:</strong> IT</p>
-        <p><strong>Experience:</strong> SQL, JavaScript, Python, CSS</p>
-        <p><strong>Hobbies & Interests:</strong></p>
-        <ul>
-            <li>Music</li>
-            <li>Reading manhwa/novels/manga</li>
-            <li>Playing Games</li>
-        </ul>
-        <p><strong>Goals in Life / Dream:</strong></p>
-        <p>To become a leading innovator in the tech industry, creating solutions that enhance convenience and accessibility for everyone. I aim to inspire others to embrace technology while staying committed to lifelong learning, personal growth, and fostering meaningful connections with my family and community.</p>
-
-        <!-- Profile Picture -->
-        <h2>Picture Gallery</h2>
-        <div class="image-gallery">
-            <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.15752-9/470052700_1936943276801216_8807325627957125547_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFHmgqZwmagfMUPe2wrqbBgyqHqRpdMeG_KoepGl0x4b9uy7V_1dqiMRe6ZyPvaqvv6bvn4vn9SLpc5OLAwJwKt&_nc_ohc=9_AfTtTaplYQ7kNvgFNn6k4&_nc_zt=23&_nc_ht=scontent.fmnl9-2.fna&oh=03_Q7cD1QGG0rW1ZlTTp74G_VkRD6589e-m0M0MevWPXj4XSP_i7g&oe=677F6F26" alt="Profile Picture" class="profile-pic">
         </div>
-    </div>
 
-    <!--  Game Photos -->
-    <div class="right">
-        <h2>Favorite Games</h2>
-        <div class="games-gallery">
-            <!-- Game 1 -->
-            <div class="game-item">
-                <img src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.15752-9/462558131_560815213183482_3840801369131715031_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEJM4CLowoeyPNnhpC_vXPWzRsONujcoXzNGw426NyhfI2KWaZ7Y49HYZbLzxtuYZOtNZhl5pgxnUXB6brClWOD&_nc_ohc=q9BMhpjEFW0Q7kNvgEiejOq&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&oh=03_Q7cD1QFaP_jn8uLwpEiI-O3nB7YCwXvFqDsCdyYy6BY0RdMjfg&oe=677F71F1" alt="Game 1" class="game-pic">
-                <p class="game-name">Game 1: Genshin Impact</p>
+        <!-- Main Content -->
+        <div class="item3" id="about">
+            <h2>About Me</h2>
+            <p><strong>Name:</strong> Sondrick Frondozo</p>
+            <p><strong>Nickname:</strong> Drick / Sun</p>
+            <p><strong>Education / Achievements:</strong> None / NA</p>
+            <p><strong>Course:</strong> IT</p>
+            <p><strong>Experience:</strong> SQL, JavaScript, Python, CSS</p>
+            <p><strong>Hobbies & Interests:</strong></p>
+            <ul>
+                <li>Music</li>
+                <li>Reading manhwa/novels/manga</li>
+                <li>Playing Games</li>
+            </ul>
+            <p><strong>Goals in Life / Dream:</strong></p>
+            <p>To become a leading innovator in the tech industry, creating solutions that enhance convenience and accessibility for everyone. I aim to inspire others to embrace technology while staying committed to lifelong learning, personal growth, and fostering meaningful connections with my family and community.</p>
+            <h2>Picture Gallery</h2>
+            <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.15752-9/470052700_1936943276801216_8807325627957125547_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFHmgqZwmagfMUPe2wrqbBgyqHqRpdMeG_KoepGl0x4b9uy7V_1dqiMRe6ZyPvaqvv6bvn4vn9SLpc5OLAwJwKt&_nc_ohc=9_AfTtTaplYQ7kNvgFNn6k4&_nc_zt=23&_nc_ht=scontent.fmnl9-2.fna&oh=03_Q7cD1QGG0rW1ZlTTp74G_VkRD6589e-m0M0MevWPXj4XSP_i7g&oe=677F6F26" alt="Profile Picture" class="profile-img">
+        </div>
+
+        <!-- Right Content -->
+        <div class="item4">
+            <h2>Favorite Games</h2>
+            <div class="game">
+                <img src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.15752-9/462558131_560815213183482_3840801369131715031_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEJM4CLowoeyPNnhpC_vXPWzRsONujcoXzNGw426NyhfI2KWaZ7Y49HYZbLzxtuYZOtNZhl5pgxnUXB6brClWOD&_nc_ohc=q9BMhpjEFW0Q7kNvgEiejOq&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&oh=03_Q7cD1QFaP_jn8uLwpEiI-O3nB7YCwXvFqDsCdyYy6BY0RdMjfg&oe=677F71F1" alt="Game 1">
+                <p><strong>Game 1:</strong> Genshin Impact</p>
             </div>
-            <!-- Game 2 -->
-            <div class="game-item">
-                <img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/465852478_1274167503678110_6094345511009744033_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGz6_Iu2HzfvdW5UorMh6qrUiQNwsju6c5SJA3CyO7pzk7elJmrrSR3fnr0fwSeWbC2WhBCjB25n-FSoWIlZWQV&_nc_ohc=EW9VbTNrdZgQ7kNvgFEkkge&_nc_zt=23&_nc_ht=scontent.fmnl9-1.fna&oh=03_Q7cD1QF9MMeWBNipwjztBX1QDx-_OBYRJSrNbmym97zAsP8stw&oe=677F92E1" alt="Game 2" class="game-pic">
-                <p class="game-name">Game 2: Wuthering Waves</p>
+            <div class="game">
+                <img src="https://scontent.fmnl9-5.fna.fbcdn.net/v/t1.15752-9/462569017_894979586090479_975850147867504019_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEnUD9Z3K3b6G7XgrrFV-jAgJFcRmuBhaeAkVxGa4GFp35n_WR3of4l-KL6PNJwI__3mAhVYSgG80iMJ1jXSlsR&_nc_ohc=Rk2FccvcbZ0Q7kNvgHPg9s-&_nc_zt=23&_nc_ht=scontent.fmnl9-5.fna&oh=03_Q7cD1QHHZJYYPrGS0e_p_3IwijR2QpvyXcxVfxfysOOMRarYnw&oe=677F6A7B" alt="Game 2">
+                <p><strong>Game 2:</strong> Honkai: Star Rail</p>
             </div>
-            <!-- Game 3 -->
-            <div class="game-item">
-                <img src="https://scontent.fmnl9-5.fna.fbcdn.net/v/t1.15752-9/462569017_894979586090479_975850147867504019_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEnUD9Z3K3b6G7XgrrFV-jAgJFcRmuBhaeAkVxGa4GFp35n_WR3of4l-KL6PNJwI__3mAhVYSgG80iMJ1jXSlsR&_nc_ohc=Rk2FccvcbZ0Q7kNvgHPg9s-&_nc_zt=23&_nc_ht=scontent.fmnl9-5.fna&oh=03_Q7cD1QHHZJYYPrGS0e_p_3IwijR2QpvyXcxVfxfysOOMRarYnw&oe=677F6A7B" alt="Game 3" class="game-pic">
-                <p class="game-name">Game 3: Honkai Star rail</p>
+            <div class="game">
+                <img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/465852478_1274167503678110_6094345511009744033_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGz6_Iu2HzfvdW5UorMh6qrUiQNwsju6c5SJA3CyO7pzk7elJmrrSR3fnr0fwSeWbC2WhBCjB25n-FSoWIlZWQV&_nc_ohc=EW9VbTNrdZgQ7kNvgFEkkge&_nc_zt=23&_nc_ht=scontent.fmnl9-1.fna&oh=03_Q7cD1QF9MMeWBNipwjztBX1QDx-_OBYRJSrNbmym97zAsP8stw&oe=677F92E1" alt="Game 3">
+                <p><strong>Game 3:</strong> Wuthering Waves</p>
             </div>
         </div>
+
+        <!-- Footer -->
         <div class="item5">
             <div class="footer">
                 <p>&copy; 2024 Sondrick Frondozo. All Rights Reserved.</p>
                 <p>Contact Me: 
-                    <a href="SondrickFrondozo31@gmail.com">SondrickFrondozo31@gmail.com</a> | 
+                    <a href="Sondrickfrondozo31@gmail.com">Sondrickfrondozo31@gmail.com</a> | 
                     <a href="https://www.linkedin.com/in/sondrick-frondozo-244a821b4/" target="_blank">LinkedIn</a> | 
                     <a href="https://github.com/SnFrondozo" target="_blank">GitHub</a>
                 </p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/Kaeezix31" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                </div>
-                <a href="#home" class="back-to-top">Back to Top ↑</a>
+            </div>
+        </div>
     </div>
-
-   
-    <div class="footer">Footer</div>
-</div>
-
 </body>
 </html>
