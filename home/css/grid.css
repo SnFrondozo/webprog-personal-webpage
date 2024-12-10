@@ -1,130 +1,124 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    padding: 20px;
-    line-height: 1.6;
-}
-
 .grid-container {
     display: grid;
     grid-template-areas:
-        "header header header header header header"
-        "menu main main main right right"
-        "menu footer footer footer footer footer";
-    gap: 15px;
-    padding: 20px;
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 10px;
+    font-family: Arial, sans-serif;
 }
 
-/* Grid Areas */
-.header { grid-area: header; }
-.menu { grid-area: menu; }
-.main { grid-area: main; }
-.right { grid-area: right; }
-.footer { grid-area: footer; }
-
-/* Section Styling */
-.grid-container > div {
-    background-color: rgba(20, 20, 20, 0.9);
+.item1 {
+    grid-area: header;
     text-align: center;
     padding: 20px;
+    background-color: #1f1f1f;
     border-radius: 8px;
 }
 
-/* Header */
-.header h1 {
-    font-size: 24px;
-    margin: 10px 0;
-    color: #00bcd4;
+.item2 {
+    grid-area: menu;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
 }
 
-/* Menu Styling */
-.menu nav ul {
+.item2 ul {
     list-style: none;
     padding: 0;
 }
 
-.menu nav ul li {
+.item2 ul li {
     margin: 10px 0;
 }
 
-.menu nav ul li a {
+.item2 ul li a {
+    color: #00bcd4;
     text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    transition: color 0.3s;
 }
 
-.menu nav ul li a:hover {
-    color: #00bcd4;
+.item2 ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Main Content */
-.main h2 {
-    margin-bottom: 15px;
-    color: #00bcd4;
+.item3 {
+    grid-area: main;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 20px;
 }
 
-.main p, .main ul {
-    text-align: left;
-    margin: 10px 0;
-}
-
-.main ul {
-    padding-left: 20px;
-}
-
-.main ul li {
-    margin-bottom: 5px;
-}
-
-/* Profile Picture */
-.image-gallery {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.profile-pic {
+.item3 img.profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #00bcd4;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
 }
 
-/* Right Content: Game Photos */
-.right h2 {
-    margin-bottom: 15px;
-    color: #00bcd4;
-}
-
-.games-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.game-item {
-    margin: 15px 0;
+.item4 {
+    grid-area: right;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 20px;
     text-align: center;
 }
 
-.game-pic {
-    width: 120px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+.item4 .game {
+    margin-bottom: 20px;
 }
 
-.game-name {
-    margin-top: 10px;
+.item4 .game img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.item4 .game p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.item5 {
+    grid-area: footer;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 15px;
     font-size: 16px;
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-top:hover {
     color: #ffffff;
 }
