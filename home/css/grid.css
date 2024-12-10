@@ -5,14 +5,13 @@
         'menu main'
         'menu right'
         'footer footer';
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 25% 45% 25%;
     gap: 10px;
     background-color: #121212;
     color: #ffffff;
     padding: 10px;
     font-family: Arial, sans-serif;
 }
-
 .item1 {
     grid-area: header;
     text-align: center;
