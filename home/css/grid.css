@@ -22,14 +22,14 @@ body {
     padding: 20px;
 }
 
-
+/* Grid Areas */
 .header { grid-area: header; }
 .menu { grid-area: menu; }
 .main { grid-area: main; }
 .right { grid-area: right; }
 .footer { grid-area: footer; }
 
-
+/* Section Styling */
 .grid-container > div {
     background-color: rgba(20, 20, 20, 0.9);
     text-align: center;
@@ -37,14 +37,14 @@ body {
     border-radius: 8px;
 }
 
-
+/* Header */
 .header h1 {
     font-size: 24px;
     margin: 10px 0;
     color: #00bcd4;
 }
 
-
+/* Menu Styling */
 .menu nav ul {
     list-style: none;
     padding: 0;
@@ -65,7 +65,7 @@ body {
     color: #00bcd4;
 }
 
-
+/* Main Content */
 .main h2 {
     margin-bottom: 15px;
     color: #00bcd4;
@@ -84,7 +84,7 @@ body {
     margin-bottom: 5px;
 }
 
-
+/* Profile Picture */
 .image-gallery {
     display: flex;
     justify-content: center;
@@ -99,8 +99,32 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* Right Content: Game Photos */
+.right h2 {
+    margin-bottom: 15px;
+    color: #00bcd4;
+}
 
-.footer {
-    font-size: 14px;
-    color: #aaaaaa;
+.games-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-item {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.game-pic {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.game-name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
 }
