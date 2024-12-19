@@ -143,5 +143,30 @@
 
     <button type="button" onclick="changeParagraphText()">Click me :3</button>
     <button type="button" onclick="showFirstParagraphText()">No click me</button>
+    <button type="button" onclick="changeBackgroundColor()">Change Background</button>
+
+    <script>
+        function updateDemoText(newText) {
+            document.getElementById("demo").innerHTML = newText;
+        }
+
+        function showFirstParagraphText() {
+            const paragraphs = document.getElementsByTagName("p");
+            if (paragraphs.length > 0) {
+                const firstParagraphText = paragraphs[0].innerHTML;
+                updateDemoText(`The text in the first paragraph (index 0) is: ${firstParagraphText}`);
+            } else {
+                updateDemoText("No paragraphs found.");
+            }
+        }
+
+        function changeParagraphText() {
+            updateDemoText("Paragraph changed.");
+        }
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+        }
+    </script>
 </body>
 </html>
