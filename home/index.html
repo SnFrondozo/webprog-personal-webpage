@@ -9,119 +9,143 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 0 15px;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        
-        hr {
-            margin: 20px 0;
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 15px;
+            text-align: center;
         }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3, h4 {
+            color: #555;
+        }
+
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 10px;
         }
+
         .profile-img {
             width: 250px;
             height: 250px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 50%;
+            margin: 20px 0;
         }
+
         .gallery-img {
             width: 300px;
             height: 300px;
             object-fit: cover;
-            border-radius: 10px;
+            margin: 10px;
         }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
+            margin: 20px 0;
         }
+
         table img {
             width: 150px;
             height: 150px;
             object-fit: cover;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        button:hover {
+            background: #555;
         }
     </style>
 </head>
 <body>
-    <P>
-    <br><h1>Personal Profile Webpage</h1>
-    <hr>
+    <header>
+        <h1>Personal Profile Webpage</h1>
+    </header>
 
-    <br><h2>About Me</h2>
-    <br><img src="https://scontent.fmnl9-4.fna.fbcdn.net/v/t1.15752-9/462558619_1680302822530872_3638218794792069436_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDWiR6FcjVEFhrgnljQKD_jmhKKhbt3E6OaEoqFu3cTuonSQgX-iVXTQvy8WbDSpoIOxHz1D0hRQa1GH3UI1Ym&_nc_ohc=4h1boOMVBOYQ7kNvgE-GQYR&_nc_zt=23&_nc_ht=scontent.fmnl9-4.fna&oh=03_Q7cD1QEobAQW2cKCiuuCQwb4jmfBGX5EqmLqn16GHxvJxJCIIQ&oe=676F2BC7" alt="Profile Picture" class="profile-img">
-    <br><p><strong>Name:</strong> Sondrick Frondozo</p>
-    <br><p><strong>Nickname:</strong> Drick / Sun</p>
+    <div class="container">
+        <h2>About Me</h2>
+        <img src="https://scontent.fmnl9-4.fna.fbcdn.net/v/t1.15752-9/462558619_1680302822530872_3638218794792069436_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGDWiR6FcjVEFhrgnljQKD_jmhKKhbt3E6OaEoqFu3cTuonSQgX-iVXTQvy8WbDSpoIOxHz1D0hRQa1GH3UI1Ym&_nc_ohc=4h1boOMVBOYQ7kNvgE-GQYR&_nc_zt=23&_nc_ht=scontent.fmnl9-4.fna&oh=03_Q7cD1QEobAQW2cKCiuuCQwb4jmfBGX5EqmLqn16GHxvJxJCIIQ&oe=676F2BC7" alt="Profile Picture" class="profile-img">
+        <p><strong>Name:</strong> Sondrick Frondozo</p>
+        <p><strong>Nickname:</strong> Drick / Sun</p>
 
-    <br><h3>Education & Achievements</h3>
-    <br><p><strong>Achievements:</strong> None</p>
-    <br><p><strong>Humanities and Social Sciences</strong></p>
-    <br><h3>Current</h3>
-    <br><p><strong>Education:</strong> Asia Pacific College</p>
-    <ul>
-        <li>BSIT-MI</li>
-    </ul>
-</P>
-    <h3>Course</h3>
-    <p>Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>
+        <h3>Education & Achievements</h3>
+        <p><strong>Achievements:</strong> None</p>
+        <p><strong>Humanities and Social Sciences</strong></p>
 
-    <h3>IT Experience</h3>
-    <ul>
-        <li>SQL</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>CSS</li>
-    </ul>
+        <h3>Current</h3>
+        <p><strong>Education:</strong> Asia Pacific College</p>
+        <ul>
+            <li>BSIT-MI</li>
+        </ul>
 
-    <h3>Hobbies & Interests</h3>
-    <ul>
-        <li>Music</li>
-        <li>Reading manhwa/novels/manga</li>
-        <li>Playing Games</li>
-    </ul>
+        <h3>Course</h3>
+        <p>Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>
 
-    
+        <h3>IT Experience</h3>
+        <ul>
+            <li>SQL</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>CSS</li>
+        </ul>
 
-    <h4>Games</h4>
-    <table>
-        <tr>
-            <td><img src="https://imgs.search.brave.com/mfcaMvLXxiulq_eL-3MGIsfflK9qLuLvgM3KIVtrcBk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YXByb3h5LnR2dHJv/cGVzLm9yZy93aWR0/aC8xMjAwL2h0dHBz/Oi8vc3RhdGljLnR2/dHJvcGVzLm9yZy9w/bXdpa2kvcHViL2lt/YWdlcy9sZWFndWVv/ZmxlZ2VuZHMucG5n" alt="Game 1"></td>
-            <td><img src="https://imgs.search.brave.com/zkvQsv9bDCrmIsVZUaXDmtgI7u6pRxzGTZKtPKrQPcc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlptUXdNalEy/WlRVdFptTTVNQzAw/TVRka0xXSXhZemd0/T0RVMU56UTRaamc0/Tm1NeFhrRXlYa0Zx/Y0djQC5qcGc" alt="Game 2"></td>
-            <td><img src="https://imgs.search.brave.com/dqrxJfIqLykq-Td8xqYYRu8FCrBPkPyMKAp45nKP5DY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmdhbWVyYW50/aW1hZ2VzLmNvbS93/b3JkcHJlc3Mvd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDQv/d3V0aGVyaW5nLXdh/dmVzLWdhbWUuanBn" alt="Game 3"></td>
-            <td><img src="https://imgs.search.brave.com/G4sQeXtQ0TtSJQuqvF9v_VIfYhNbzKVL6daifk5WYGQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpqUTRZVFpp/Tm1RdFpEWmpOUzAw/TURKakxXSmxaVGN0/T1RCbE56UXlOamt6/WlRWalhrRXlYa0Zx/Y0djQC5qcGc" alt="Game 4"></td>
-        </tr>
-    </table>
+        <h3>Hobbies & Interests</h3>
+        <ul>
+            <li>Music</li>
+            <li>Reading manhwa/novels/manga</li>
+            <li>Playing Games</li>
+        </ul>
 
-    <h2>Goals In Life / Dream</h2>
-    <p>To become a leading innovator in the tech industry, creating solutions that enhance convenience and accessibility for everyone. I aim to inspire others to embrace the potential of technology while staying committed to lifelong learning, personal growth, and fostering meaningful connections with my family and community.</p>
+        <h3>Games</h3>
+        <table>
+            <tr>
+                <td><img src="https://imgs.search.brave.com/mfcaMvLXxiulq_eL-3MGIsfflK9qLuLvgM3KIVtrcBk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YXByb3h5LnR2dHJv/cGVzLm9yZy93aWR0/aC8xMjAwL2h0dHBz/Oi8vc3RhdGljLnR2/dHJvcGVzLm9yZy9w/bXdpa2kvcHViL2lt/YWdlcy9sZWFndWVv/ZmxlZ2VuZHMucG5n" alt="Game 1"></td>
+                <td><img src="https://imgs.search.brave.com/zkvQsv9bDCrmIsVZUaXDmtgI7u6pRxzGTZKtPKrQPcc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlptUXdNalEy/WlRVdFptTTVNQzAw/TVRka0xXSXhZemd0/T0RVMU56UTRaamc0/Tm1NeFhrRXlYa0Zx/Y0djQC5qcGc" alt="Game 2"></td>
+                <td><img src="https://imgs.search.brave.com/dqrxJfIqLykq-Td8xqYYRu8FCrBPkPyMKAp45nKP5DY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmdhbWVyYW50/aW1hZ2VzLmNvbS93/b3JkcHJlc3Mvd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDQv/d3V0aGVyaW5nLXdh/dmVzLWdhbWUuanBn" alt="Game 3"></td>
+                <td><img src="https://imgs.search.brave.com/G4sQeXtQ0TtSJQuqvF9v_VIfYhNbzKVL6daifk5WYGQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QlpqUTRZVFpp/Tm1RdFpEWmpOUzAw/TURKakxXSmxaVGN0/T1RCbE56UXlOamt6/WlRWalhrRXlYa0Zx/Y0djQC5qcGc" alt="Game 4"></td>
+            </tr>
+        </table>
 
-    <h2>Picture Gallery</h2>
-    <p>
-        <img src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.15752-9/462580040_1215532019554159_4994362751218240618_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGb_oQXreZSq09_bS58wckajxDJI1HECXyPEMkjUcQJfNEKZJIBF0BrLTCdaMv3Fnf-1Q81-Pb6enJ7QVu1dond&_nc_ohc=FZUOMMYZRHoQ7kNvgEPwuk1&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&oh=03_Q7cD1QGIugQUhvY34vTqTEQozApFsGr-JrwwinxjjpHkVRC0ow&oe=676F4104" alt="Image 1" class="gallery-img">
-        <img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/467477889_3184751838332903_4035622673160545191_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE1uIlhutlGUOaCdKSoJfSlEa3aTd3BDVERrdpN3cENUd5susCSF9UdwXnN-dazrBjYenb2EiRrQZWgTLdI7MhS&_nc_ohc=B1cP18tWsukQ7kNvgGqmTcT&_nc_zt=23&_nc_ht=scontent.fmnl9-1.fna&oh=03_Q7cD1QFJVRQq2-C6PAubMyOWoLENnvLP22s_16DsnaXjB-HxxQ&oe=676F2BEF" alt="Image 2" class="gallery-img">
-    </p>
+        <h3>Goals In Life / Dream</h3>
+        <p>To become a leading innovator in the tech industry, creating solutions that enhance convenience and accessibility for everyone. I aim to inspire others to embrace the potential of technology while staying committed to lifelong learning, personal growth, and fostering meaningful connections with my family and community.</p>
 
-    <h2>Demo External JavaScript</h2>
-
-<p id="demo">A Paragraph.</p>
-
-<button type="button" onclick="myFunction1()">Try it</button>
-
-<p>This example links to "myScript.js".</p>
-
-<p>(myFunction is stored in "myScript.js")</p>
-
-<br> 
-
-<button type="button" onclick="myFunction2()">Try it</button>
-
-<p>Hello is me</p>
-
-<script src="js/myScript.js"></script>
-
-
-</body>
-</html>
+        <h3>Picture Gallery</h3>
+        <div class="gallery">
+            <img src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.15752-9/462580040_1215532019554159_4994362751218240618_n.jpg
