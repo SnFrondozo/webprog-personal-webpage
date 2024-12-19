@@ -1,8 +1,6 @@
-
 function updateDemoText(newText) {
     document.getElementById("demo").innerHTML = newText;
 }
-
 
 function showFirstParagraphText() {
     const paragraphs = document.getElementsByTagName("p");
@@ -14,21 +12,6 @@ function showFirstParagraphText() {
     }
 }
 
-
 function changeParagraphText() {
     updateDemoText("Paragraph changed.");
-}
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    const button1 = document.querySelector('button[onclick="myFunction1()"]');
-    const button2 = document.querySelector('button[onclick="myFunction2()"]');
-    
-    if (button1) {
-        button1.addEventListener("click", () => changeParagraphText());
-    }
-
-    if (button2) {
-        button2.addEventListener("click", () => showFirstParagraphText());
-    }
-});
+} 
