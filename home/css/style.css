@@ -72,3 +72,24 @@ body {
         #demo {
             color: #ff0000; 
         }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 15px;
+            background-color: #000;
+            color: #fff;
+            position: relative; 
+        }
+        
+        #background-video {
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+            z-index: -1; 
+        }
+        
+        
