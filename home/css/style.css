@@ -17,49 +17,73 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    flex-wrap: wrap;
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
     padding: 10px;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .navbar a:hover {
     text-decoration: underline;
     background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .container {
+    margin: 0 auto;
+    padding: 20px;
     max-width: 1200px;
-    margin: 100px auto 0;
-    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 20px 0;
 }
 
 .grid-item {
-    background-color: #333;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
 }
 
 .game-images {
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .game-images img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
+    width: 45%;
+    margin-bottom: 10px;
 }
 
-.contact-section {
+#contact-form {
     margin-top: 30px;
     padding: 20px;
     background-color: #222;
@@ -67,17 +91,63 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.contact-section h2,
-.footer {
-    color: #ff0000;
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
 }
 
-.contact-section a {
-    color: #ff0000;
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
-.footer {
-    background-color: #222;
+#contact-form button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
     padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #cc0000;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: #ff0000;
+}
+
+.footer {
     text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 20px;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
