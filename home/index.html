@@ -5,74 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile Webpage</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#about-me">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#it-experience">IT Experience</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#contact">Contact</a>
+    <div id="app">
+        <div class="navbar">
+            <a href="#about-me">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#it-experience">IT Experience</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="container">
+            <h1>Personal Profile Webpage</h1>
+
+            <hr>
+            <section id="about-me" class="grid-item">
+                <h2>About Me</h2>
+                <img src="profile-picture.jpg" alt="Profile Picture" class="profile-img">
+                <p><strong>Name:</strong> Sondrick Frondozo</p>
+                <p><strong>Nickname:</strong> Drick / Sun</p>
+            </section>
+
+            <section id="education" class="grid-item">
+                <h2>Education & Achievements</h2>
+                <p><strong>Achievements:</strong> None</p>
+                <p><strong>Education:</strong> Asia Pacific College</p>
+                <ul>
+                    <li>BSIT-MI</li>
+                </ul>
+                <p>Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>
+            </section>
+
+            <section id="it -experience" class="grid-item">
+                <h2>IT Experience</h2>
+                <ul>
+                    <li>SQL</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>CSS</li>
+                </ul>
+            </section>
+
+            <section id="hobbies" class="grid-item">
+                <h2>Hobbies & Interests</h2>
+                <ul>
+                    <li>Music</li>
+                    <li>Reading manhwa/novels/manga</li>
+                    <li>Playing Games</li>
+                </ul>
+                <div id="gallery">
+                    <h3>Game Gallery</h3>
+                    <picture-gallery :images="gameImages"></picture-gallery>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:sondrickfrondozo31@gmail.com">sondrickfrondozo31@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/sondrick-frondozo-244a821b4/">linkedin.com/in/sondrickfrondozo</a></p>
+                <p>GitHub: <a href="https://github.com/SnFrondozo">github.com/sondrickfrondozo</a></p>
+            </section>
+
+            <section id="guestbook" class="grid-item">
+                <h2>Guestbook</h2>
+                <survey-form></survey-form>
+            </section>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Sondrick Frondozo.</p>
+        </div>
     </div>
 
-    <div class="container">
-        <h1>Personal Profile Webpage</h1>
-
-        <hr>
-        <section id="about-me" class="grid-item">
-            <h2>About Me</h2>
-            <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/465054479_3886877201580186_4401328358624045156_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFOh_fx_nNNplECwjYCctFUisRSBQ32vVaKxFIFDfa9Vn0bw5WMxRHN3HfqNv0JbnWq-DHUTDtg_y9fESgUos6s&_nc_ohc=QXsmBjHF-koQ7kNvgG5UfoN&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&oh=03_Q7cD1gEKm61OHPsDJiR_E9rLFwz_EpJG6EqnMQtuYmUKs3VDJg&oe=678B1DAB" alt="Profile Picture" class="profile-img">
-            <p><strong>Name:</strong> Sondrick Frondozo</p>
-            <p><strong>Nickname:</strong> Drick / Sun</p>
-        </section>
-
-        <section id="education" class="grid-item">
-            <h2>Education & Achievements</h2>
-            <p><strong>Achievements:</strong> None</p>
-            <p><strong>Humanities and Social Sciences</strong></p>
-            <p><strong>Education:</strong> Asia Pacific College</p>
-            <ul>
-                <li>BSIT-MI</li>
-            </ul>
-            <p>Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>
-        </section>
-
-        <section id="it-experience" class="grid-item">
-            <h2>IT Experience</h2>
-            <ul>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>CSS</li>
-            </ul>
-        </section>
-
-        <section id="hobbies" class="grid-item">
-            <h2>Hobbies & Interests</h2>
-            <ul>
-                <li>Music</li>
-                <li>Reading manhwa/novels/manga</li>
-                <li>Playing Games</li>
-            </ul>
-            <div class="game-images">
-                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462558131_560815213183482_3840801369131715031_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEJM4CLowoeyPNnhpC_vXPWzRsONujcoXzNGw426NyhfI2KWaZ7Y49HYZbLzxtuYZOtNZhl5pgxnUXB6brClWOD&_nc_ohc=q_Gl4cRi8toQ7kNvgEXdWrK&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gH2nBbnGYC0pfj0Autmm34wieIM6s74fqPxRgImTqOMEA&oe=67ABD471" alt="Game 1">
-                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/465852478_1274167503678110_6094345511009744033_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGz6_Iu2HzfvdW5UorMh6qrUiQNwsju6c5SJA3CyO7pzk7elJmrrSR3fnr0fwSeWbC2WhBCjB25n-FSoWIlZWQV&_nc_ohc=l4_ZbpeKSq0Q7kNvgEiFC95&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gGrOtjsV8dI1LcjvwxknaCD18SzX8dK9WKXu3nzS7RzTw&oe=67ABF561" alt="Game 2">
-                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462569017_894979586090479_975850147867504019_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEnUD9Z3K3b6G7XgrrFV-jAgJFcRmuBhaeAkVxGa4GFp35n_WR3of4l-KL6PNJwI__3mAhVYSgG80iMJ1jXSlsR&_nc_ohc=ls0d2vl5shUQ7kNvgGkM216&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gEiDc9mk5EhpK6wh1DtjCkk0FAQaP2oVKw7Mj3lzOvBpg&oe=67ABCCFB" alt="Game 3">
-                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/116938331_223212318950727_7865015564925416403_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEooJj3PfDdmCPF_9IGPusECMivSsUB-3QIyK9KxQH7dJGPK8DAxPykipilJlQ9fb4Hqq_WlpSlfLbzhslRVcXi&_nc_ohc=vz63vna_zlcQ7kNvgFXyxmR&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1gFpxvEyx05FgeTnN6e-cizzk5OoMSW_ES6YA9TO-QIR3A&oe=67ABDBFC" alt="Game 4">
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:sondrickfrondozo31@gmail.com">sondrickfrondozo31@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/sondrick-frondozo-244a821b4/">linkedin.com/in/sondrickfrondozo</a></p>
-            <p>GitHub: <a href="https://github.com/SnFrondozo">github.com/sondrickfrondozo</a></p>
-        </section>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2025 Sondrick Frondozo. All Rights Reserved.</p>
-    </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
+

@@ -31,8 +31,14 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 80px auto 0;
+    margin: 80px auto 0; /* Adjust for navbar */
     padding: 0 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .grid-item {
@@ -40,20 +46,6 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.game-images {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.game-images img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
 }
 
 .contact-section {
@@ -64,17 +56,39 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.contact-section h2,
-.footer {
-    color: #ff0000;
-}
-
-.contact-section a {
-    color: #ff0000;
-}
-
 .footer {
     background-color: #222;
     padding: 10px 20px;
     text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* New for Gallery */
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .grid-item {
+        margin-bottom: 20px;
+    }
 }
