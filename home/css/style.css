@@ -9,29 +9,32 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #222;
     padding: 10px 20px;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
+    flex-wrap: wrap;
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
+    padding: 10px;
 }
 
 .navbar a:hover {
     text-decoration: underline;
+    background-color: #444;
 }
 
 .container {
     max-width: 1200px;
-    margin: 80px auto 0;
+    margin: 100px auto 0;
     padding: 0 20px;
 }
 
