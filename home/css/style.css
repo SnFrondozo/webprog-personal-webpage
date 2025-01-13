@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #111;
+    background: linear-gradient(to bottom, #111, #8b0000); /* Gradient from black to dark red */
     color: #ff4757;
 }
 
@@ -43,7 +43,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em; /* Adjusted font size to be normal */
     color: #ff4757;
     margin-bottom: 20px;
 }
@@ -72,17 +72,17 @@ ul {
 
 ul li {
     margin: 15px 0;
-    font-size: 1.2em;
+    font-size: 1.1em; /* Adjusted font size for list items */
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em; /* Adjusted font size for h2 */
     margin-bottom: 15px;
     color: #ff4757;
 }
 
 #contact p {
-    font-size: 1.2em;
+    font-size: 1.1em; /* Adjusted font size for contact paragraph */
 }
 
 #contact i {
@@ -104,7 +104,7 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1em; /* Adjusted font size for button */
     margin-top: 20px;
 }
 
