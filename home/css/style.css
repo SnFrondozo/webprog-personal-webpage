@@ -3,6 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    padding-top: 60px; /* Adjusted padding for the navbar */
     background-color: #000;
     color: #fff;
 }
