@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000; 
-    color: #8b0000;
+    color: #000000;
 }
 
 .navbar {
@@ -59,7 +59,7 @@ section {
 }
 
 .grid-item img {
-    width: 100%; 
+    width: 80%; 
     height: auto;
     border-radius: 10px;
     border: 5px solid #444;
